@@ -1,0 +1,24 @@
+{
+  "name": "SMS-APP",
+  "version": "1.0.0",
+  "description": "Building a simple Student Management app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "keywords": [
+    "pwa",
+    "progressive",
+    "web",
+    "app",
+    "complete",
+    "student",
+    "management",
+    "system"
+  ],
+  "author": "Zeeshan Saleem",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
