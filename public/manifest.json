@@ -1,0 +1,40 @@
+{
+    "name": "Student Management APP",
+    "short_name":"SMS APP",
+    "icons":[
+        {
+            "src":"/assets/img/icons/sms48.png",
+            "type":"image/png",
+            "sizes":"48x48"
+        },
+        {
+            "src":"/assets/img/icons/sms64.png",
+            "type":"image/png",
+            "sizes":"64x64"
+        },
+        {
+            "src":"/assets/img/icons/sms128.png",
+            "type":"image/png",
+            "sizes":"128x128"
+        },
+        {
+            "src":"/assets/img/icons/sms256.png",
+            "type":"image/png",
+            "sizes":"256x256"
+        },
+        {
+            "src":"/assets/img/icons/sms400.png",
+            "type":"image/png",
+            "sizes":"400x400"
+        }
+   ],
+    "start_url":"/index.html",
+    "scope":".",
+    "display":"standalone",
+    "orientation":"portrait-primary",
+    "background_color":"#fff",
+    "theme_color": "#f7941d",
+    "description":"A Student Management APP in PWA",
+    "dir":"ltr",
+    "lang":"en-US"
+}

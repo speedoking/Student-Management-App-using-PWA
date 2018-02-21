@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Student Management APP</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" type="image/png" href="/assets/img/icons/sms48.png" />
+
+<!--<link rel="manifest" href="/manifest.webmanifest">-->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="SMS APP">
+  <link rel="apple=touch-icon" href="/assets/img/icons/sms48.png" sizes="48x48">  
+  <link rel="apple=touch-icon" href="/assets/img/icons/sms64.png" sizes="64x64">  
+  <link rel="apple=touch-icon" href="/assets/img/icons/sms128.png" sizes="128x128">  
+  <link rel="apple=touch-icon" href="/assets/img/icons/sms256.png" sizes="256x256">  
+  <link rel="apple=touch-icon" href="/assets/img/icons/sms400.png" sizes="400x400">  
+  <meta name="msapplication-TileImage" content="/assets/img/icons/sms128.png">
+  <meta name="msapplication-TileColor" content="#fff">
+  <meta name="theme-color" content="#f7941d">
+</head>
+
+<body>
+    <div class="container">
+        <div class='row'>
+            <div id='appTitle' class="col-md-12 col-sm-12 col-xs-12">
+            <h4><span id = 'btnBack'> &#xab; </span> &nbsp; Student Management App</h4>
+             </div>
+             </div>
+        <div id ='mainPage' class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-1 col-md-offset-1 col-sm-2  col-xs-3 ">
+                <a id= 'btnAdd'  href = 'javascript:void(0);' ><img src="assets/img/add64.png" alt=""></a>
+                <h5 class='text-center'>Add</h5>
+            </div>
+            <div class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-3 col-xs-offset-1">
+                <a id= 'btnRead' href='javascript:void(0);'><img src="assets/img/search64.png" alt=""></a>
+                <h5 class='text-center'>Search</h5>
+            </div>
+            <div class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-3 col-xs-offset-1">
+                <a id= 'btnEdit' href='javascript:void(0);'><img src="assets/img/edit64.png" alt=""></a>
+                <h5 class='text-center'>Edit</h5>
+            </div>
+            <div class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-3 col-xs-offset-2">
+                <a id= 'btnRemove' href='javascript:void(0);'><img src="assets/img/remove64.png" alt=""></a>
+                <h5 class='text-center'>Remove</h5>
+            </div>
+            <div class="col-md-1 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-3 col-xs-offset-2">
+                <a id= 'btnReadAll' href='javascript:void(0);'><img src="assets/img/listall64.png" alt=""></a>
+                <h5 class='text-center'>View All</h5>
+            </div>
+            </div>
+        </div>
+
+<div  class="row">
+    <div  id ='addPage' class="col-md-6 col-md-offset-3 col-sm-10 col-xs-11">
+            <div class="col-md-12  col-sm-12 col-xs-12">
+            <div class="col-md-6 col-md-offset-3  col-sm-4 col-sm-offset-4 col-xs-12 ">                
+                <img id = 'titleImg' src="assets/img/add64.png" alt="">
+                <h4 id = 'titleText' class='text-center'>Student Registration Form</h4>
+            </div>
+            <div class=" col-md-3  col-sm-4 ">                
+                </div>
+            </div>
+            
+            <div class="col-md-12 col-sm-12 col-xs-12">  
+                </br>          
+            <div class="col-md-2 col-md-offset-3  col-sm-3 col-sm-offset-1 col-xs-3 ">
+                <h5>ID: </h5>
+            </div>
+            <div class="col-md-5  col-sm-6  col-xs-7 ">
+                <input id = 'inputId' class = 'input-sm' type="number" placeholder="Student ID">
+            </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">            
+            </br>
+            <div class="col-md-2 col-md-offset-3  col-sm-3 col-sm-offset-1 col-xs-3  ">
+                <h5>Name: </h5>
+            </div>
+            <div class="col-md-5 col-sm-6  col-xs-7 ">
+                <input id='inputName' class = 'input-sm' type="text" placeholder="Name">
+            </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+            </br>
+            <div class="col-md-2 col-md-offset-3  col-sm-3 col-sm-offset-1 col-xs-3  ">
+                <h5>Age: </h5>
+            </div>
+            <div class="col-md-5  col-sm-6  col-xs-7 ">
+                <input id = 'inputAge' class = 'input-sm' type="number" placeholder="Age">
+            </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+            </br>
+            <div class="col-md-2 col-md-offset-3  col-sm-3 col-sm-offset-1 col-xs-3">
+                <h5>Email: </h5>
+            </div>
+            <div class="col-md-5  col-sm-6  col-xs-7 ">
+                <input id='inputEmail' class = 'input-sm' type="email" placeholder="Email">
+            </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+            </br>
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-4 col-xs-12 ">
+                <div id = 'addBtnGroup'>
+                <button id = 'saveBtn' style = 'width:90%;' class= 'btn btn-lg btn-success'>Save</button>                
+                </div>
+                <div id = 'editBtnGroup'>
+                <button id = 'searchBtnEdit' class= 'btn  btn-lg btn-success'>Search</button>
+                <button id = 'editBtn' class= 'btn  btn-lg btn-info'>Edit</button>
+                </div>
+                <div id = 'deleteBtnGroup'>
+                <button id = 'searchBtnDelete' class= 'btn btn-lg btn-success'>Search</button>
+                <button id = 'deleteBtn' class= 'btn btn-lg btn-info'>Delete</button>
+                </div>
+                <div id = 'readBtnGroup'>
+                <button id = 'searchBtnRead' class= 'btn btn-lg btn-success'>Search</button>
+                <button id = 'resetBtn' class= 'btn btn-lg btn-info'>Reset</button>
+                </div>               
+            </div>
+            </div>
+     </div>
+ </div>
+
+
+<div id ='tablePage' class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <img id = 'titleImgList' src="assets/img/listall64.png" alt="">
+                <h4 class='text-center'>Student List</h4>
+                </br>
+                 <div class="table-responsive">
+                    <table class="table table-bordered table-condensed">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Email</th>                                
+                            </tr>
+                        </thead>
+                        <tbody id = 'tableRecord'>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+
+            
+            <div id= 'errorDiv' class="col-md-12 col-sm-12 col-xs-11">
+            </div>        
+        <footer>
+            
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <h6>Designed By: Zeeshan (CMAD # 16B ID:822)</h6></div>               
+        </footer>
+    </div>
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <!-- <script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="assets/js/init.js"></script>
+    <script src='assets/js/dbindex.js'></script>
+</body>
+
+</html>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC-PDxPkfWQqdcP5l_nx3dWZfOuDR5oWtE",
+    authDomain: "sms-pwa-zee.firebaseapp.com",
+    databaseURL: "https://sms-pwa-zee.firebaseio.com",
+    projectId: "sms-pwa-zee",
+    storageBucket: "sms-pwa-zee.appspot.com",
+    messagingSenderId: "699053878548"
+  };
+  firebase.initializeApp(config);
+</script>

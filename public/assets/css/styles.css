@@ -1,0 +1,101 @@
+footer{
+  position:fixed;
+  bottom:0%;
+  width:85%;
+  margin: 0px;
+ /*background: red;*/
+ /*margin-left: -15px;*/
+ color: white;
+ background: rgb(247,148,29);
+
+}
+
+#addPage{
+  margin: 110px 10px 10px 10px;
+  /*margin-top: 140px;*/
+  border: 1px solid white;
+  background: white;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  display: none;
+  color: black;
+    box-shadow: 2px 3px 3px lightcyan;
+    transform: translateY(60vh);
+    transition: transform 0.3s;
+    
+  
+}
+
+#titleImg{
+    margin-top: -15%;
+    margin-left: 35%;
+    background: rgb(247,148,29);
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 2px 3px 5px gray;
+}
+
+#mainPage{
+  margin-top: 60px;
+}
+
+#appTitle{
+  background: rgb(247,148,29);
+  padding: 8px 0px 8px 20px;
+    position:fixed;
+    top: 0%;
+    z-index: 10;
+}
+
+#btnBack{
+  font-size: 26px;
+  font-weight: bold;
+  visibility: hidden; 
+}
+
+#titleImgList{
+      margin-top: -15%;
+    margin-left: 35%;
+    background: rgb(247,148,29);
+    border-radius: 50%;
+    padding: 5px;
+      box-shadow: 2px 3px 5px gray;
+}
+
+#tablePage{
+  margin: 110px 10px 10px 10px;
+  border: 1px solid white;
+  background: white;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  display: none;
+  color: black;
+      box-shadow: 2px 3px 3px lightcyan;
+       transform: translateY(100vh);
+    transition: transform 0.3s;
+}
+
+#errorDiv{
+  position: fixed;
+  top: 20%;
+  display: none;
+  background: rgb(0,0,0);
+  border-radius: 10px;
+  /*height: 100px;*/
+  padding: 0px 0px 0px 5px;
+  color: white;
+  z-index: 20;
+  margin: 0 auto;
+}
+
+.makeInvisible{
+  display: none;
+}
+
+body{
+  background:rgb(45,45,45);
+  color: white;
+}
+#mainPage div{
+padding: 20px 15px;
+}
